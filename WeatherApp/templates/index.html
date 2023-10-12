@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Weather App</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Enter city name">
+            <button id="searchButton">Search</button>
+        </div>
+        <div class="main-content">
+            <div class="weather-card">
+                <h2>Current Weather</h2>
+                <div id="weatherInfo" class="weather-info">
+                    <div class="loader"></div>
+                </div>
+                <div id="map" class="map"></div>
+            </div>
+            <div class="forecast-card">
+                <h2>5-Day Forecast</h2>
+                <div id="forecast" class="forecast">
+                    <div class="loader"></div>
+                </div>
+            </div>
+        </div>
+        <div id="error" class="error"></div>
+    </div>
+    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
